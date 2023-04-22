@@ -5,14 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Bank extends Model
+class BankNumberOwner extends Model
 {
     use HasFactory;
 
     protected $guarded = ["id"];
 
-    public function BankNumberOwners()
+    public function User()
     {
-        return $this->hasMany(BankNumberOwners::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function Bank()
+    {
+        return $this->belongsTo(Bank::class);
     }
 }

@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(ClientData::class);
     }
+
+    public function BankNumberOwners()
+    {
+        return $this->hasMany(BankNumberOwners::class);
+    }
 }
