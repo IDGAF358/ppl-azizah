@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(BankNumberOwners::class);
     }
+
+    public function RawProductOwners()
+    {
+        return $this->hasMany(RawProductOwner::class);
+    }
 }
