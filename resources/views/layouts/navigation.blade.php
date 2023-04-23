@@ -26,10 +26,10 @@
             <span>{{ __('Users') }}</span></a>
     </li>
 
-    <li class="nav-item @if(request()->routeIs('about')) active @endif">
-        <a class="nav-link" href="{{ route('about') }}">
+    <li class="nav-item @if(request()->routeIs('owner.raw-product.index')) active @endif">
+        <a class="nav-link" href="{{ route('owner.raw-product.index') }}">
             <i class="fas fa-fw fa-eye"></i>
-            <span>{{ __('About') }}</span></a>
+            <span>{{ __('Bahan Baku') }}</span></a>
     </li>
 
     <!-- Divider -->
@@ -38,7 +38,7 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-           aria-expanded="true" aria-controls="collapseTwo" style="padding-top: inherit;">
+            aria-expanded="true" aria-controls="collapseTwo" style="padding-top: inherit;">
             <i class="fas fa-fw fa-cog"></i>
             <span>Two-level menu</span>
         </a>
